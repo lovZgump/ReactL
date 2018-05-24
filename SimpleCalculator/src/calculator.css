@@ -1,0 +1,51 @@
+.Calculator{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.div_class_calculator{
+    text-align: center;
+    margin-left: 360px;
+    padding-top: 10px;
+    width: 540px;
+    height: auto;
+    border: #fff 1px solid;
+    padding-bottom: 10px;
+    background-color: beige;
+}
+.div_class_showdatabar input{
+    width: 500px;
+    height: 40px;
+    line-height: 24px;
+    margin: 10px auto;
+    text-align: right;
+    font-size: 24px;
+    font-weight:bold;
+}
+
+.div_class_buttonlist{
+    width: 505px;
+    height: auto;
+    padding: 10px 0;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    align-content: flex-start;
+}
+
+.div_class_button{
+    box-sizing: border-box;
+    flex: 0 0 19%;
+    height: 68px;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+
+
+
+
+
