@@ -1,0 +1,211 @@
+.records {
+    width:800px;
+    margin: 0px;
+}
+
+.Form{
+    width:800px;
+    margin: 0px;
+}
+
+.add-grade{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.Name{
+     width:120px;
+ }
+
+.Name label{
+    width:100px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+    display: block;
+}
+
+.Name input{
+    width: 100px;
+    font-size: 18px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.Chinese{
+     width:120px;
+ }
+
+.Chinese label{
+    width:100px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+    display: block;
+}
+
+.Chinese input{
+    width: 100px;
+    font-size: 18px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.Math{
+    width:120px;
+}
+
+.Math label{
+    width:100px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+    display: block;
+}
+
+.Math input{
+    width: 100px;
+    font-size: 18px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.English{
+    width:120px;
+}
+
+.English label{
+    width:100px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+    display: block;
+}
+
+.English input{
+    width: 100px;
+    font-size: 18px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.Physic{
+    width:120px;
+}
+
+.Physic label{
+    width:100px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+    display: block;
+}
+
+.Physic input{
+    width: 100px;
+    font-size: 18px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.add-grade.add-btn {
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.record-list {
+    width: 800px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.record-item.toggle {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.record-item.toggle:after {
+    margin: 20px 10px 10px 10px;
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#ededed" stroke-width="3"/></svg>');
+}
+
+.record-item.toggle:checked:after {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#bddad5" stroke-width="3"/><path fill="#5dc2af" d="M72 25L42 71 27 56l-4 4 20 20 34-52z"/></svg>');
+}
+
+.record-item.remove {
+    border: 0;
+    background: 0;
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: #cc9a9a;
+    margin-bottom: 11px;
+    transition: color 0.2s ease-out;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.record-item:hover.remove {
+    display: block
+}
+
+.record-item.remove:hover {
+    color: #af5b5e;
+}
+
+.transcript{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.tableHead{
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.tableHead div{
+    font-size: 20px;
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+}
+
+.record{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.record div{
+    font-size: 18px;
+    width: 100px;
+    text-align: center;
+}
+
+
