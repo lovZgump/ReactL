@@ -2,26 +2,27 @@ import React from 'react';
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux';
 import {setFilter} from '../actions.js';
+import { Link } from "react-router-dom";
 
-const Link = ({active, children, onClick}) => {
+const PageLink = ({active, children, onClick, route}) => {
     if (active) {
-        return <b className="filter selected">{children}</b>;
+        return <Link to={"/"+route} className="filter selected">{children}</Link>;
     } else {
         return (
-            <a href="#" className="filter not-selected" onClick={(ev) => {
-                ev.preventDefault();
+            <Link to={"/"+route} className="filter not-selected" onClick={(ev) => {
                 onClick();
             }}>
                 {children}
-            </a>
+            </Link>
         );
     }
 };
 
-Link.propTypes = {
+PageLink.propTypes = {
     active: PropTypes.bool.isRequired,
     children: PropTypes.node.isRequired,
-    onClick: PropTypes.func.isRequired
+    onClick: PropTypes.func.isRequired,
+    route: PropTypes.string.isRequired
 };
 
 const mapStateToProps = (state, ownProps) => {
@@ -36,4 +37,4 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
     }
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Link);
+export default connect(mapStateToProps, mapDispatchToProps)(PageLink);
